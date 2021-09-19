@@ -1,0 +1,18 @@
+#include <windows.h>
+
+#define IDC_DIALOG 120
+#define IDC_SCROLLBAR 121
+#define IDC_INDEX 122
+#define IDC_FIBONACCI 123
+
+IDC_DIALOG DIALOG 0, 0, 240, 115
+CAPTION "Fibonacci-Sequenz ausgeben"
+STYLE DS_CENTER | DS_MODALFRAME | WS_POPUPWINDOW | WS_CAPTION
+FONT 9, "MS Shell Dlg"
+{
+    PUSHBUTTON "Schließen", IDCANCEL, 90, 86, 60, 14
+    LTEXT "Index:", -1, 45, 20, 20, 10
+    LTEXT "Zugehörige Fibonacci-Zahl:", -1, 35, 45, 49, 17
+    LTEXT "i", IDC_INDEX, 90, 20, 43, 10
+    LTEXT "F[i]", IDC_FIBONACCI, 90, 50, 83, 10
+}
